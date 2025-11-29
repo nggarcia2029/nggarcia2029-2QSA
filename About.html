@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Authors</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500&display=swap');
+
+        :root {
+            --autumn-red: #8B2E2E;
+            --autumn-orange: #C86E43;
+            --forest: #3E6B4F; 
+            --earth: #5A4631;
+            --white: #F5F3EE;
+            --sky: #92B4EC;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: var(--white);
+            color: var(--earth);
+        }
+
+        header {
+            width: 100%;
+            padding: 18px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(62, 107, 79, 0.8); 
+            backdrop-filter: blur(8px);
+            position: fixed;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.4rem;
+            color: var(--white);
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            margin-left: 25px;
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        .hero {
+            margin-top: 95px;
+            padding: 80px 20px;
+            text-align: center;
+            background: linear-gradient(to bottom, rgba(62,107,79,0.4), rgba(90,70,49,0.55));
+        }
+
+        .hero h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 5rem;
+            color: var(--white);
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            color: var(--white);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .authors-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 60px 5%;
+            background: var(--white);
+        }
+
+        .author-card {
+            background: var(--forest);
+            color: var(--white);
+            width: 300px;
+            border-radius: 20px;
+            padding: 30px 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .author-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.3);
+        }
+
+        .author-card h3 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+        }
+
+        .author-card p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 40px;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            background: var(--forest);
+            color: var(--white);
+            letter-spacing: 1px;
+        }
+
+        @media(max-width:950px){
+            .authors-section {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media(max-width:500px){
+            .hero h1 { font-size: 3rem; }
+            .hero p { font-size: 1.1rem; }
+            .author-card { width: 90%; }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>Batanes</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Food</a>
+        <a href="#">Gallery</a>
+        <a href="#">Tourist Spots</a>
+        <a href="#">Hotels</a>
+        <a href="#">About</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>About the Authors</h1>
+    <p>Meet the passionate team behind this Batanes travel project. Each of us brings a unique perspective and love for adventure, design, and storytelling.</p>
+</section>
+
+<section class="authors-section">
+
+    <div class="author-card">
+        <h3>Ysa</h3>
+        <p>Curious and adventurous, Ysa explored Batanes through its food and famous destinations. She wrote about the must-visit tourist spots and local dishes, capturing the charm and culture of the islands in a warm and engaging way.</p>
+    </div>
+
+    <div class="author-card">
+        <h3>Nica</h3>
+        <p>Creative and detail-oriented, Nica brought the beauty of Batanes to life through the Photo Gallery. She curated and organized the images, making sure each picture highlights the breathtaking views and calm atmosphere of the province.</p>
+    </div>
+
+    <div class="author-card">
+        <h3>Isha</h3>
+        <p>Energetic and organized, Isha worked on the Hotels and Accommodations section, gathering the details, prices, and photos to guide travelers. She also helped keep the project on track, making every part come together smoothly.</p>
+    </div>
+
+</section>
+
+<footer>
+    © 2025 Batanes Tourism Website
+</footer>
+
+</body>
+</html>
