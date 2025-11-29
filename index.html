@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batanes Travel</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500&display=swap');
+
+        :root {
+            --autumn-red: #8B2E2E;
+            --autumn-orange: #C86E43;
+            --forest: #3E6B4F; /* MAIN COLOR */
+            --earth: #5A4631;
+            --white: #F5F3EE;
+            --sky: #92B4EC;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--white);
+            font-family: 'Poppins', sans-serif;
+            color: var(--earth);
+        }
+
+        /* HEADER */
+        header {
+            width: 100%;
+            padding: 18px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(62, 107, 79, 0.8); /* FOREST GREEN with transparency */
+            backdrop-filter: blur(8px);
+            position: fixed;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.4rem;
+            color: var(--white);
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            margin-left: 25px;
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        /* HERO */
+        .hero {
+            margin-top: 95px;
+            height: 72vh;
+            background:
+                linear-gradient(to bottom, rgba(62,107,79,0.4), rgba(90,70,49,0.55)),
+                url("https://cooltravelvibes.com/wp-content/uploads/2024/12/basco-lighthouse-2048x1004.jpg");
+            background-size: cover;
+            background-position: center;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            color: var(--white);
+        }
+
+        .hero h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 6rem;
+            text-shadow: 3px 3px 15px rgba(0,0,0,0.6);
+        }
+
+        .hero h3 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            margin-top: 10px;
+            opacity: .95;
+        }
+
+        /* CONTENT */
+        .content {
+            width: 75%;
+            margin: 60px auto;
+            text-align: center;
+        }
+
+        .content h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.7rem;
+            color: var(--forest);
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            opacity: 0.9;
+            margin-bottom: 45px;
+        }
+
+        /* BOXES */
+        .box-container {
+            display: flex;
+            justify-content: center;
+            gap: 35px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 300px;
+            background: var(--white);
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border: 2.5px solid var(--forest);
+            transition: 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+        }
+
+        .box h3 {
+            font-family: 'Dancing Script', cursive;
+            color: var(--forest);
+            font-size: 2.1rem;
+            margin-bottom: 10px;
+        }
+
+        .box p {
+            color: var(--earth);
+            opacity: 0.9;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 60px;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            background: var(--forest);
+            color: var(--white);
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h2>Batanes</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Food</a>
+            <a href="#">Gallery</a>
+            <a href="#">Tourist Spots</a>
+            <a href="#">Hotels</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Batanes</h1>
+        <h3>The Land of Rolling Hills & Calm Horizons</h3>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="content">
+        <h2>What Is Batanes Known For?</h2>
+        <p>
+            Batanes is loved for its peaceful landscapes, stone houses, 
+            vibrant Ivatan culture, dramatic cliffs, and postcard-worthy rolling hills.
+            It is the calmest and safest province in the Philippines — a natural escape
+            for anyone seeking serenity, adventure, and beauty.
+        </p>
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Why Visit Batanes?</h3>
+                <p>Pure serenity, breathtaking scenery, kind locals, and untouched nature everywhere you look.</p>
+            </div>
+
+            <div class="box">
+                <h3>Places to Explore</h3>
+                <p>Basco Lighthouse, Marlboro Hills, Sabtang Island, Vayang Rolling Hills, and more iconic spots.</p>
+            </div>
+
+            <div class="box">
+                <h3>Hotels & Stays</h3>
+                <p>Peaceful homestays, cozy inns, and cliffside lodges with ocean views and Ivatan hospitality.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 Batanes Tourism Website — Created for CS3 Summative Assessment
+    </footer>
+
+</body>
+</html>
