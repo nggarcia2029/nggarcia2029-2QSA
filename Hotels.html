@@ -12,6 +12,8 @@
     --ocean-blue: #004E6B;
     --seafoam: #6FA5A5;
     --light-bg: #F5F3EE; 
+    --forest: #3E6B4F; 
+    --white: #F5F3EE;
 }
 
 * {
@@ -114,7 +116,15 @@ section.hotel-grid {
     font-size: 0.95rem;
     margin: 8px 0;
 }
-
+footer {
+            margin-top: 40px;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            background: var(--forest);
+            color: var(--white);
+            letter-spacing: 1px;
+        }
 .hotel-card p.price {
     font-weight: 600;
     color: var(--ocean-blue);
@@ -124,7 +134,7 @@ section.hotel-grid {
     transform: translateY(-5px);
 }
 
-/* Responsive Design */
+
 @media (max-width: 1024px) {
     .hotel-card { width: 45%; }
 }
@@ -149,7 +159,8 @@ section.hotel-grid {
     <h2>Discover Batanes</h2>
     <nav>
         <a href="#">Home</a>
-        <a href="#">Food Gallery</a>
+        <a href="#">Food</a>
+       <a href="#">Gallery</a>
         <a href="#">Tourist Spots</a>
         <a href="#" class="active">Hotels & Accomodations</a>
         <a href="#">About</a>
@@ -219,4 +230,7 @@ section.hotel-grid {
 
 </section>
 </body>
+  <footer>
+    © 2025 Batanes Tourism Website
+</footer>
 </html>
