@@ -27,7 +27,6 @@ body {
     background: var(--white);
 }
 
-/* FIXED + aesthetic header */
 header {
     width: 100%;
     padding: 18px 50px;
@@ -49,7 +48,7 @@ header h2 {
 
 nav a {
     margin-left: 25px;
-    color: var(--white) !important; /* FIX BLUE LINKS */
+    color: var(--white) !important; 
     text-decoration: none;
     font-weight: 500;
     transition: 0.3s;
@@ -59,14 +58,12 @@ nav a:hover {
     opacity: 0.75;
 }
 
-/* MAIN SECTION */
 .main-section {
     padding: 120px 20px 50px;
     max-width: 1200px;
     margin: auto;
 }
 
-/* PERFECT 2x2 GRID */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -74,14 +71,12 @@ nav a:hover {
     justify-items: center;
 }
 
-/* Responsive: stack on mobile */
 @media (max-width: 700px) {
     .grid-container {
         grid-template-columns: 1fr;
     }
 }
 
-/* CARD DESIGN */
 .tour-card {
     background: white;
     border-radius: 20px;
@@ -121,7 +116,6 @@ nav a:hover {
     box-shadow: 0 18px 45px rgba(0,0,0,0.25);
 }
 
-/* FOOTER */
 footer {
     width: 100%;
     padding: 20px;
