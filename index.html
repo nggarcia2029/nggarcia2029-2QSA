@@ -28,10 +28,10 @@
             font-family: 'Poppins', sans-serif;
             color: var(--earth);
         }
-        
+
         header {
             width: 100%;
-            padding: 18px 50px;
+            padding: 18px 30px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -44,13 +44,12 @@
 
         header h2 {
             font-family: 'Dancing Script', cursive;
-            font-size: 2.4rem;
+            font-size: 2rem;
             color: var(--white);
-            letter-spacing: 1px;
         }
 
         nav a {
-            margin-left: 25px;
+            margin-left: 20px;
             color: var(--white);
             text-decoration: none;
             font-weight: 500;
@@ -61,9 +60,16 @@
             opacity: 0.7;
         }
 
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            gap: 15px;
+        }
+
         .hero {
-            margin-top: 95px;
-            height: 72vh;
+            margin-top: 80px;
+            height: 70vh;
             background:
                 linear-gradient(to bottom, rgba(62,107,79,0.4), rgba(90,70,49,0.55)),
                 url("https://cooltravelvibes.com/wp-content/uploads/2024/12/basco-lighthouse-2048x1004.jpg");
@@ -75,41 +81,41 @@
             align-items:center;
             text-align:center;
             color: var(--white);
+            padding: 20px;
         }
 
         .hero h1 {
             font-family: 'Dancing Script', cursive;
-            font-size: 6rem;
+            font-size: 5rem;
             text-shadow: 3px 3px 15px rgba(0,0,0,0.6);
         }
 
         .hero h3 {
             font-family: 'Dancing Script', cursive;
-            font-size: 2.5rem;
+            font-size: 2rem;
             margin-top: 10px;
-            opacity: .95;
         }
 
         .content {
-            width: 75%;
+            width: 90%;
+            max-width: 900px;
             margin: 60px auto;
             text-align: center;
         }
 
         .content h2 {
             font-family: 'Dancing Script', cursive;
-            font-size: 3.7rem;
+            font-size: 3rem;
             color: var(--forest);
             margin-bottom: 15px;
         }
 
         .content p {
-            font-size: 1.2rem;
-            line-height: 1.8;
+            font-size: 1.1rem;
+            line-height: 1.7;
             opacity: 0.9;
             margin-bottom: 45px;
         }
-
 
         .box-container {
             display: flex;
@@ -136,13 +142,8 @@
         .box h3 {
             font-family: 'Dancing Script', cursive;
             color: var(--forest);
-            font-size: 2.1rem;
+            font-size: 2rem;
             margin-bottom: 10px;
-        }
-
-        .box p {
-            color: var(--earth);
-            opacity: 0.9;
         }
 
         footer {
@@ -152,7 +153,25 @@
             text-align: center;
             background: var(--forest);
             color: var(--white);
-            letter-spacing: 1px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                gap: 10px;
+                justify-content: center;
+            }
+
+            nav a {
+                margin-left: 0;
+            }
+
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+
+            .hero h3 {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
@@ -162,12 +181,12 @@
     <header>
         <h2>Batanes</h2>
         <nav>
-        <a href="#index.html">Home</a>
-        <a href="#Food.html">Food</a>
-        <a href="#Gallery.html">Gallery</a>
-        <a href="Tourist Spots.html">Tourist Spots</a>
-        <a href="#Hotels.html">Hotels</a>
-        <a href="#About.html">About</a>
+            <a href="index.html">Home</a>
+            <a href="Food.html">Food</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Tourist Spots.html">Tourist Spots</a>
+            <a href="Hotels.html">Hotels</a>
+            <a href="About.html">About</a>
         </nav>
     </header>
 
@@ -186,7 +205,6 @@
         </p>
 
         <div class="box-container">
-
             <div class="box">
                 <h3>Why Visit Batanes?</h3>
                 <p>Pure serenity, breathtaking scenery, kind locals, and untouched nature everywhere you look.</p>
@@ -201,9 +219,7 @@
                 <h3>Hotels & Stays</h3>
                 <p>Peaceful homestays, cozy inns, and cliffside lodges with ocean views and Ivatan hospitality.</p>
             </div>
-
         </div>
-
     </section>
 
     <footer>
